@@ -17,6 +17,8 @@ Follow the installation instructions specific to your OS.
 Verify the installation by running the following commands in your terminal:
 
 node -v
+
+
 npm -v
 
 2. Clone the Repository
