@@ -14,12 +14,12 @@ describe('Douglas Parfum Product Filter Test', () => {
 
     it('should list products based on filters', async () => {
         await parfumPage.openFilter('classificationClassName');
-        await parfumPage.setFilter('Bodylotion');
+        await parfumPage.setFilter('After Shave');
         await parfumPage.openFilter('brand');
-        await parfumPage.setFilter('Gucci');
+        await parfumPage.setFilter('Aigner');
         await parfumPage.openFilter('gender');
-        await parfumPage.setGender('');
+        await parfumPage.setGender('Männlich');
         const productContent = await parfumPage.listProducts();
-        expect(productContent).toContain('GUCCI', 'Text content details do not match the applied filters.');
+        expect(productContent).toContain('AIGNER', 'Text content details do not match the applied filters.');
     });
 });
